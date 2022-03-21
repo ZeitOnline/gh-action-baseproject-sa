@@ -1,0 +1,19 @@
+name: 'ZON Baseproject SA'
+description: 'Calculate the ZON Baseproject SA name from project and environment'
+inputs:
+  project:
+    description: 'GCP Project'
+    required: true
+  environment:
+    description: 'ZON Environment'
+    required: true
+  sa_type:
+    description: 'Type of SA (ci or wi)'
+    required: false
+    default: ci
+outputs:
+  serviceaccount:
+    description: 'Full name (email) of the Service Account'
+runs:
+  using: 'node16'
+  main: 'index.js'
