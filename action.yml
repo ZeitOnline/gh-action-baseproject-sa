@@ -2,6 +2,9 @@ name: 'ZON Baseproject SA'
 description: 'Calculate the ZON Baseproject SA name from project and environment'
 inputs:
   project:
+    description: 'Project Name'
+    required: true
+  google_project:
     description: 'GCP Project'
     required: true
   environment:
